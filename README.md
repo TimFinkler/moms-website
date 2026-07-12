@@ -6,9 +6,9 @@ Website für **Expat Family Life** – eine statische Ein-Seiten-Website (`index
 
 **Live-Vorschau (GitHub Pages):** https://timfinkler.github.io/moms-website/
 
-> Falls der Link noch nicht funktioniert, muss GitHub Pages einmalig aktiviert werden:
-> **Settings → Pages → Source: „Deploy from a branch" → Branch: `main`, Ordner: `/ (root)` → Save.**
-> Nach 1–2 Minuten ist die Seite unter dem Link oben erreichbar.
+> Das Deployment läuft automatisch über GitHub Actions (`.github/workflows/deploy-pages.yml`):
+> Bei jedem Push auf `main` wird die Seite neu veröffentlicht.
+> Voraussetzung (einmalig): **Settings → Pages → Source: „GitHub Actions"**.
 
 ## Struktur
 
