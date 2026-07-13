@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Expat Family Life – Stephanie Finkler</title>
 <meta name="description" content="Ein autobiografischer Ratgeberroman für Expatfamilien – und solche, die es werden wollen. Von Stephanie Finkler." />
+<link rel="icon" type="image/png" href="./images/favicon.png" />
+<link rel="apple-touch-icon" href="./images/favicon.png" />
 <style>
   @font-face{font-family:'Playfair Display';font-style:normal;font-weight:400 900;font-display:swap;src:url('./fonts/playfairdisplay.woff2') format('woff2');}
   @font-face{font-family:'Playfair Display';font-style:italic;font-weight:400 900;font-display:swap;src:url('./fonts/playfairdisplay-italic.woff2') format('woff2');}
@@ -61,7 +63,8 @@
     border-bottom:1px solid var(--line);
   }
   .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 26px;max-width:var(--maxw);margin:0 auto;}
-  .brand{font-family:"Playfair Display",serif;font-weight:700;font-size:1.05rem;color:var(--olive);letter-spacing:.02em;white-space:nowrap;}
+  .brand{display:flex;align-items:center;gap:12px;font-family:"Playfair Display",serif;font-weight:700;font-size:1.05rem;color:var(--olive);letter-spacing:.02em;white-space:nowrap;}
+  .brand img{height:44px;width:auto;display:block;}
   .brand .fam{font-family:"Kaushan Script",cursive;color:var(--berry);font-weight:400;font-size:1.15em;}
   .nav-links{display:flex;gap:22px;flex-wrap:wrap;justify-content:flex-end;}
   .nav-links a{font-size:.82rem;font-weight:600;color:var(--ink-soft);letter-spacing:.02em;transition:color .2s;}
@@ -91,7 +94,7 @@
   .divider svg{width:min(420px,80%);height:44px;}
 
   /* ---------- SECTIONS ---------- */
-  section{padding:56px 0;scroll-margin-top:64px;}
+  section{padding:56px 0;scroll-margin-top:84px;}
   .section-title{font-size:clamp(1.8rem,5vw,2.6rem);color:var(--ink);margin-bottom:.5em;}
   .lead{font-size:1.12rem;color:var(--ink-soft);max-width:640px;}
 
@@ -116,6 +119,8 @@
   .portrait{aspect-ratio:4/5;background:
       repeating-linear-gradient(45deg,#e3d9c6,#e3d9c6 14px,#ddd2bd 14px,#ddd2bd 28px);
     border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-size:.78rem;text-align:center;padding:16px;letter-spacing:.02em;}
+
+  .author-logo{width:150px;height:auto;margin-top:14px;}
 
   /* approach cards */
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px;}
@@ -211,7 +216,7 @@
 <!-- ===== NAV ===== -->
 <header class="nav">
   <div class="nav-inner">
-    <div class="brand">EXPAT <span class="fam">Family</span> LIFE</div>
+    <div class="brand"><img src="./images/logo.png" alt=""><span>EXPAT <span class="fam">Family</span> LIFE</span></div>
     <button class="nav-toggle" aria-label="Menü" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
     <nav class="nav-links" id="navlinks">
       <a href="#buch">Das Buch</a>
@@ -305,6 +310,7 @@
       <h2 class="section-title">Stephanie Finkler</h2>
       <p>Stephanie Finkler ist in ihrem Leben <strong>17-mal umgezogen</strong> – schon als Kind mit ihren Eltern innerhalb Deutschlands, später mit ihrer eigenen kleinen Familie: erst ins europäische Ausland, bevor der große Sprung nach Australien folgte.</p>
       <p>Als interkulturelle Expertin berät und begleitet sie Expatfamilien vor, während und nach ihrem Auslandsaufenthalt. Ihr Ziel ist immer eine nachhaltig positive Relocation – ein erfolgreiches Ankommen und Bleiben. Zurzeit lebt sie mit ihrem Mann am Niederrhein – oder die beiden bereisen mit ihrem Camper die Welt.</p>
+      <img class="author-logo" src="./images/logo.png" alt="Logo von Stephanie Finkler: eine Weltkarte mit Reiseroute und Häusern auf drei Kontinenten" loading="lazy">
     </div>
   </div>
 </section>
