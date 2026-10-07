@@ -210,8 +210,8 @@
   .book-photo{background:var(--cream-deep);border:1px solid var(--line);padding:14px;box-shadow:0 14px 34px rgba(44,40,37,.12);}
   .book-photo img{width:100%;height:auto;display:block;}
   .book-photo figcaption{font-size:.8rem;color:var(--ink-soft);text-align:center;margin-top:12px;font-style:italic;}
-  .portrait-photo{overflow:hidden;border:1px solid var(--line);box-shadow:0 12px 30px rgba(44,40,37,.14);max-width:300px;}
-  .portrait-photo img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;}
+  .portrait-photo{overflow:hidden;border:1px solid var(--line);box-shadow:0 12px 30px rgba(44,40,37,.14);width:100%;max-width:300px;}
+  .portrait-photo img{width:100%;height:auto;display:block;aspect-ratio:3/4;object-fit:cover;}
   .banner{position:relative;min-height:56vh;display:flex;align-items:center;justify-content:center;text-align:center;background-size:cover;background-position:center top;}
   .banner::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(44,40,37,.18),rgba(44,40,37,.42));}
   .banner .banner-inner{position:relative;color:#fff;padding:0 26px;max-width:760px;}
@@ -270,7 +270,7 @@
     <p class="hero-sub">Ein autobiografischer Ratgeberroman für Expatfamilien – und solche, die es werden wollen.</p>
     <div class="hero-author">von Stephanie Finkler</div>
     <div class="cta-row">
-      <a href="https://buchshop.bod.de/expat-family-life-stephanie-finkler-9783695781973" target="_blank" rel="noopener" class="btn btn-primary">Buch bestellen</a>
+      <a href="#bestellen" class="btn btn-primary">Buch bestellen</a>
       <a href="#buch" class="btn btn-ghost">Über das Buch</a>
     </div>
   </div>
@@ -299,7 +299,7 @@
       </div>
     </div>
     <figure class="book-photo">
-      <img src="./images/buch.jpg" alt="Das Buch „Expat Family Life“ von Stephanie Finkler" loading="lazy">
+      <img src="./images/buch.jpg" width="760" height="1010" alt="Das Buch „Expat Family Life“ von Stephanie Finkler" loading="lazy">
       <figcaption>Geschichte und praktischer Ratgeber in einem – Roman und Reiseführer durchs Expatleben.</figcaption>
     </figure>
   </div>
@@ -341,7 +341,7 @@
 <!-- ===== AUTORIN ===== -->
 <section id="autorin" class="author">
   <div class="wrap author-grid reveal">
-    <div class="portrait-photo"><img src="./images/autorin.jpg" alt="Stephanie Finkler, Autorin" loading="lazy"></div>
+    <div class="portrait-photo"><img src="./images/autorin.jpg" width="700" height="933" alt="Stephanie Finkler, Autorin" loading="lazy"></div>
     <div>
       <div class="eyebrow">
         <svg width="18" height="18" viewBox="0 0 22 26"><path d="M0,10 L11,0 L22,10 L22,26 L0,26 Z" fill="#953B6B"/><rect x="8" y="15" width="7" height="8" fill="#EBE3D2"/></svg>
@@ -370,7 +370,7 @@
         <li><svg width="14" height="16" viewBox="0 0 22 26" aria-hidden="true"><path d="M0,10 L11,0 L22,10 L22,26 L0,26 Z" fill="#B15330"/></svg>Expertin für Expatfamilien und Neuanfänge</li>
       </ul>
     </div>
-    <img class="trainer-logo" src="./images/logo.png" alt="Logo von Stephanie Finkler: eine Weltkarte mit Reiseroute und Häusern auf drei Kontinenten" loading="lazy">
+    <img class="trainer-logo" src="./images/logo.png" width="480" height="411" alt="Logo von Stephanie Finkler: eine Weltkarte mit Reiseroute und Häusern auf drei Kontinenten" loading="lazy">
   </div>
 </section>
 
